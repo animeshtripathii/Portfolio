@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Animesh Tripathi's portfolio of web development, mobile apps, and software projects">
+  <title>Projects | Animesh Tripathi</title>
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">Animesh<span>Tripathi</span></a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" onclick="toggleTheme()">
+            <span class="theme-icon-light">&#9728;</span>
+            <span class="theme-icon-dark">&#9790;</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-content">
+      <span class="hero-badge">My Portfolio</span>
+      <h1 class="hero-title">Featured <span>Projects</span></h1>
+      <p class="hero-description">A collection of my work showcasing web applications, mobile apps, and software solutions I've built.</p>
+    </div>
+  </section>
+
+  <!-- Projects Filter -->
+  <section class="section">
+    <div class="container">
+      <div class="project-filters">
+        <button class="filter-btn active">All Projects</button>
+        <button class="filter-btn">Frontend</button>
+        <button class="filter-btn">Full Stack</button>
+        <button class="filter-btn">Mobile Apps</button>
+        <button class="filter-btn">Open Source</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="ShopEase E-Commerce" class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#project-modal-1" class="project-link" title="View Details">&#128269;</a>
+                <a href="#" class="project-link" title="Visit Site">&#8599;</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Full Stack</span>
+            <h3 class="project-title">ShopEase E-Commerce</h3>
+            <p class="project-description">A complete e-commerce platform with product management, cart functionality, payment integration, and admin dashboard.</p>
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Stripe</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="DataViz Dashboard" class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#project-modal-2" class="project-link" title="View Details">&#128269;</a>
+                <a href="#" class="project-link" title="Visit Site">&#8599;</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Frontend</span>
+            <h3 class="project-title">DataViz Dashboard</h3>
+            <p class="project-description">An interactive analytics dashboard with real-time data visualization, custom charts, and export functionality.</p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">D3.js</span>
+              <span class="project-tag">TailwindCSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="FitTrack App" class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#project-modal-3" class="project-link" title="View Details">&#128269;</a>
+                <a href="#" class="project-link" title="Visit Site">&#8599;</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Mobile Apps</span>
+            <h3 class="project-title">FitTrack Mobile</h3>
+            <p class="project-description">Cross-platform fitness app with workout tracking, progress analytics, and social features for fitness enthusiasts.</p>
+            <div class="project-tags">
+              <span class="project-tag">React Native</span>
+              <span class="project-tag">Firebase</span>
+              <span class="project-tag">Redux</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop" alt="CLI Tools" class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#project-modal-4" class="project-link" title="View Details">&#128269;</a>
+                <a href="#" class="project-link" title="GitHub">&#8599;</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Open Source</span>
+            <h3 class="project-title">DevKit CLI</h3>
+            <p class="project-description">A collection of CLI tools for developers to automate common tasks, scaffold projects, and manage workflows.</p>
+            <div class="project-tags">
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Commander</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop" alt="TaskFlow App" class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#project-modal-5" class="project-link" title="View Details">&#128269;</a>
+                <a href="#" class="project-link" title="Visit Site">&#8599;</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Full Stack</span>
+            <h3 class="project-title">TaskFlow SaaS</h3>
+            <p class="project-description">Project management SaaS with team collaboration, kanban boards, time tracking, and real-time updates.</p>
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">PostgreSQL</span>
+              <span class="project-tag">WebSocket</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="project-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop" alt="Portfolio Template" class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#project-modal-6" class="project-link" title="View Details">&#128269;</a>
+                <a href="#" class="project-link" title="Visit Site">&#8599;</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <span class="project-category">Frontend</span>
+            <h3 class="project-title">Developer Portfolio</h3>
+            <p class="project-description">A customizable portfolio template for developers with dark mode, animations, and responsive design.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">GSAP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">By The Numbers</h2>
+        <p class="section-subtitle">A snapshot of my development journey and achievements.</p>
+      </div>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="card" style="text-align: center;">
+          <div class="stat-number" style="font-size: 3rem; margin-bottom: 0.5rem;">50+</div>
+          <div class="card-title" style="margin-bottom: 0;">Projects Completed</div>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div class="stat-number" style="font-size: 3rem; margin-bottom: 0.5rem;">30+</div>
+          <div class="card-title" style="margin-bottom: 0;">Happy Clients</div>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div class="stat-number" style="font-size: 3rem; margin-bottom: 0.5rem;">500+</div>
+          <div class="card-title" style="margin-bottom: 0;">GitHub Commits</div>
+        </div>
+        <div class="card" style="text-align: center;">
+          <div class="stat-number" style="font-size: 3rem; margin-bottom: 0.5rem;">10+</div>
+          <div class="card-title" style="margin-bottom: 0;">Open Source Contributions</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Technologies I Use</h2>
+        <p class="section-subtitle">The tools and frameworks that power my projects.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">&#128187;</div>
+          <h3 class="card-title">Frontend</h3>
+          <p class="card-description">React, Next.js, Vue.js, TypeScript, TailwindCSS, Sass, and modern JavaScript ES6+.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#9881;</div>
+          <h3 class="card-title">Backend</h3>
+          <p class="card-description">Node.js, Express, Python, Django, REST APIs, GraphQL, and serverless functions.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128241;</div>
+          <h3 class="card-title">Mobile</h3>
+          <p class="card-description">React Native, Flutter, Expo, mobile-first responsive design, and PWA development.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128451;</div>
+          <h3 class="card-title">Database & Cloud</h3>
+          <p class="card-description">MongoDB, PostgreSQL, Firebase, AWS, Vercel, Docker, and Redis caching.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Have a Project in Mind?</h2>
+        <p class="section-subtitle">I'm always excited to work on new and challenging projects. Let's discuss how I can help bring your ideas to life.</p>
+        <div class="hero-buttons" style="margin-top: 2rem;">
+          <a href="contact.html" class="btn btn-primary">Start a Project</a>
+          <a href="about.html" class="btn btn-secondary">Learn About Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Animesh<span>Tripathi</span></div>
+        <p class="footer-description">Full Stack Developer passionate about creating exceptional digital experiences. Let's build something amazing together.</p>
+        <div class="social-links">
+          <a href="https://github.com/animeshtripathi" class="social-link" title="GitHub">GH</a>
+          <a href="https://linkedin.com/in/animeshtripathi" class="social-link" title="LinkedIn">in</a>
+          <a href="https://twitter.com/animeshtripathi" class="social-link" title="Twitter">X</a>
+          <a href="mailto:animesh@example.com" class="social-link" title="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About Me</a></li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">Frontend Development</a></li>
+          <li><a href="#" class="footer-link">Backend Development</a></li>
+          <li><a href="#" class="footer-link">Mobile Apps</a></li>
+          <li><a href="#" class="footer-link">API Integration</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact Info</h4>
+        <ul class="footer-links">
+          <li><span class="footer-link">New Delhi, India</span></li>
+          <li><span class="footer-link">animesh@example.com</span></li>
+          <li><span class="footer-link">+91 98765 43210</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2026 Animesh Tripathi. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modals -->
+  <div id="project-modal-1" class="modal-overlay">
+    <div class="modal">
+      <a href="#" class="modal-close">&times;</a>
+      <h3 class="modal-title">ShopEase E-Commerce</h3>
+      <p class="modal-content">A full-featured e-commerce platform built with Next.js and Node.js. Features include product catalog with filtering and search, user authentication, shopping cart with real-time updates, Stripe payment integration, order management, and an admin dashboard for inventory control. The platform handles over 1000 daily users with optimized performance.</p>
+    </div>
+  </div>
+
+  <div id="project-modal-2" class="modal-overlay">
+    <div class="modal">
+      <a href="#" class="modal-close">&times;</a>
+      <h3 class="modal-title">DataViz Dashboard</h3>
+      <p class="modal-content">An interactive analytics dashboard built with React and D3.js. Features include real-time data updates via WebSocket, customizable chart types (line, bar, pie, scatter), data export to CSV/PDF, responsive design for all devices, and dark mode support. Used by a fintech company to visualize trading data.</p>
+    </div>
+  </div>
+
+  <div id="project-modal-3" class="modal-overlay">
+    <div class="modal">
+      <a href="#" class="modal-close">&times;</a>
+      <h3 class="modal-title">FitTrack Mobile</h3>
+      <p class="modal-content">A cross-platform fitness tracking app built with React Native. Features include workout logging with exercise database, progress tracking with charts, social features for sharing achievements, push notifications for reminders, and offline support. Available on both iOS and Android with over 5000 downloads.</p>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+
+    // Filter buttons functionality (CSS-only toggle)
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
