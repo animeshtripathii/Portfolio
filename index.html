@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Animesh Tripathi - Full Stack Developer specializing in web and mobile applications">
+  <title>Animesh Tripathir</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">Animesh<span>Tripathi</span></a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" onclick="toggleTheme()">
+            <span class="theme-icon-light">&#9728;</span>
+            <span class="theme-icon-dark">&#9790;</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">Full Stack Developer</span>
+      <h1 class="hero-title">Hi, I'm <span>Animesh Tripathi</span></h1>
+      <p class="hero-description">I build exceptional digital experiences that live on the web. Passionate about creating clean, efficient code and user-friendly applications that solve real-world problems.</p>
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn btn-primary">View My Work</a>
+        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section (What I Do) -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What I Do</h2>
+        <p class="section-subtitle">I offer comprehensive development services to bring your ideas to life with clean code and modern technologies.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <span class="card-badge">Expertise</span>
+          <div class="card-icon">&#127912;</div>
+          <h3 class="card-title">Frontend Development</h3>
+          <p class="card-description">Creating responsive, accessible, and performant user interfaces using React, Vue, and modern CSS frameworks.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128187;</div>
+          <h3 class="card-title">Backend Development</h3>
+          <p class="card-description">Building robust APIs and server-side applications with Node.js, Python, and database management systems.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128241;</div>
+          <h3 class="card-title">Mobile Development</h3>
+          <p class="card-description">Developing cross-platform mobile applications using React Native and Flutter for iOS and Android.</p>
+        </div>
+        <div class="card">
+          <span class="card-badge">Popular</span>
+          <div class="card-icon">&#128202;</div>
+          <h3 class="card-title">Database Design</h3>
+          <p class="card-description">Designing efficient database schemas and implementing data solutions with SQL and NoSQL databases.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128640;</div>
+          <h3 class="card-title">DevOps & Deployment</h3>
+          <p class="card-description">Setting up CI/CD pipelines, containerization with Docker, and cloud deployments on AWS, Vercel, and more.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128274;</div>
+          <h3 class="card-title">API Integration</h3>
+          <p class="card-description">Integrating third-party services, payment gateways, and building RESTful and GraphQL APIs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Gallery Section (Recent Work) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Recent Work</h2>
+        <p class="section-subtitle">A glimpse of my latest projects and the technologies I work with.</p>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="E-Commerce Project" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-title">E-Commerce Platform</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Dashboard Project" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-title">Analytics Dashboard</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=400&h=300&fit=crop" alt="UI Design Project" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-title">SaaS Application</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=800&h=300&fit=crop" alt="Mobile App Project" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-title">Mobile App</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop" alt="Coding Project" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-title">API Development</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&h=300&fit=crop" alt="Portfolio Project" class="gallery-image">
+          <div class="gallery-overlay">
+            <span class="gallery-title">Portfolio Website</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies and tools I work with on a daily basis to build amazing products.</p>
+      </div>
+      <div class="skills-container">
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">HTML/CSS/Sass</span>
+            <span class="skill-percentage">95%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">JavaScript/TypeScript</span>
+            <span class="skill-percentage">92%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 92%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">React/Next.js</span>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Node.js/Express</span>
+            <span class="skill-percentage">88%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 88%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">Python/Django</span>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header">
+            <span class="skill-name">MongoDB/PostgreSQL</span>
+            <span class="skill-percentage">87%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 87%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services/Pricing Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Freelance Services</h2>
+        <p class="section-subtitle">Looking to hire me for your next project? Here are my service packages.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3 class="pricing-title">Basic Website</h3>
+          <div class="pricing-price">5000<span>/project</span></div>
+          <ul class="pricing-features">
+            <li class="pricing-feature">Up to 5 Pages</li>
+            <li class="pricing-feature">Responsive Design</li>
+            <li class="pricing-feature">Contact Form</li>
+            <li class="pricing-feature">Basic SEO Setup</li>
+            <li class="pricing-feature">2 Weeks Delivery</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary">Get Started</a>
+        </div>
+        <div class="pricing-card featured">
+          <h3 class="pricing-title">Full Stack App</h3>
+          <div class="pricing-price">20000<span>/project</span></div>
+          <ul class="pricing-features">
+            <li class="pricing-feature">Custom Web Application</li>
+            <li class="pricing-feature">Database Integration</li>
+            <li class="pricing-feature">User Authentication</li>
+            <li class="pricing-feature">API Development</li>
+            <li class="pricing-feature">1 Month Support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <h3 class="pricing-title">Enterprise Solution</h3>
+          <div class="pricing-price">50000<span>+</span></div>
+          <ul class="pricing-features">
+            <li class="pricing-feature">Complex Applications</li>
+            <li class="pricing-feature">Scalable Architecture</li>
+            <li class="pricing-feature">Cloud Deployment</li>
+            <li class="pricing-feature">Performance Optimization</li>
+            <li class="pricing-feature">3 Months Support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">Have a project in mind or just want to chat? I'm always open to discussing new opportunities and ideas.</p>
+        <div class="hero-buttons" style="margin-top: 2rem;">
+          <a href="contact.html" class="btn btn-primary">Contact Me</a>
+          <a href="projects.html" class="btn btn-secondary">View Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Animesh<span>.dev</span></div>
+        <p class="footer-description">Full Stack Developer passionate about creating exceptional digital experiences. Let's build something amazing together.</p>
+        <div class="social-links">
+          <a href="https://github.com" class="social-link" title="GitHub">GH</a>
+          <a href="https://linkedin.com/in" class="social-link" title="LinkedIn">in</a>
+          <a href="https://twitter.com" class="social-link" title="Twitter">X</a>
+          <a href="mailto:animesh@example.com" class="social-link" title="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About Me</a></li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">Frontend Development</a></li>
+          <li><a href="#" class="footer-link">Backend Development</a></li>
+          <li><a href="#" class="footer-link">Mobile Apps</a></li>
+          <li><a href="#" class="footer-link">API Integration</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact Info</h4>
+        <ul class="footer-links">
+          <li><span class="footer-link">New Delhi, India</span></li>
+          <li><span class="footer-link">animesh@example.com</span></li>
+          <li><span class="footer-link">+91xxxxxxxx</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2026 Animesh Tripathi. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CSS-Only Modal -->
+  <div id="contact-modal" class="modal-overlay">
+    <div class="modal">
+      <a href="#" class="modal-close">&times;</a>
+      <h3 class="modal-title">Let's Connect!</h3>
+      <p class="modal-content">Thank you for your interest! Please visit my <a href="contact.html" style="color: var(--primary-color);">contact page</a> to get in touch, or email me directly at animesh@example.com. I typically respond within 24 hours!</p>
+    </div>
+  </div>
+
+  <script>
+    // Theme Toggle (minimal JS for theme persistence)
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    // Mobile Menu Toggle
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    // Load saved theme
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</body>
+</html>
