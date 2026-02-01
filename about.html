@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn more about Animesh Tripathi - Full Stack Developer, my journey, skills, and experience">
+  <title>About Me | Animesh Tripathi</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">Animesh<span>Tripathi</span></a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" onclick="toggleTheme()">
+            <span class="theme-icon-light">&#9728;</span>
+            <span class="theme-icon-dark">&#9790;</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-content">
+      <span class="hero-badge">About Me</span>
+      <h1 class="hero-title">Passionate <span>Developer</span></h1>
+      <p class="hero-description">Building digital experiences that make a difference, one line of code at a time.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section">
+    <div class="container">
+      <div class="about-hero">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop" alt="Animesh Tripathi - Developer">
+        </div>
+        <div>
+          <h2 class="section-title" style="text-align: left;">My Story</h2>
+          <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">Hello! I'm Animesh Tripathi, a Full Stack Developer based in New Delhi, India. My journey into programming started when I was in high school, fascinated by how websites and applications work. That curiosity turned into a passion that has driven my career ever since.</p>
+          <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">I specialize in building scalable web applications and have experience working with startups and established companies alike. I believe in writing clean, maintainable code and creating user experiences that are both functional and delightful.</p>
+          <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 1.5rem;">When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through technical blog posts and mentoring.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">30+</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">What Drives Me</h2>
+        <p class="section-subtitle">The principles and values that guide my work and interactions.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">&#128161;</div>
+          <h3 class="card-title">Continuous Learning</h3>
+          <p class="card-description">Technology evolves rapidly, and I'm committed to staying current with the latest trends, frameworks, and best practices in software development.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#129309;</div>
+          <h3 class="card-title">Collaboration</h3>
+          <p class="card-description">I believe the best results come from working closely with clients and team members, understanding needs, and building solutions together.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#127942;</div>
+          <h3 class="card-title">Quality First</h3>
+          <p class="card-description">I never compromise on code quality. Every project receives my full attention to detail, testing, and optimization for the best performance.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">&#128156;</div>
+          <h3 class="card-title">User-Centric</h3>
+          <p class="card-description">At the heart of every application I build are the users. I focus on creating intuitive, accessible experiences that people love to use.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Experience & Education</h2>
+        <p class="section-subtitle">My professional journey and educational background.</p>
+      </div>
+      <div class="team-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div class="card">
+          <h3 class="card-title" style="margin-bottom: 0.5rem;">Senior Full Stack Developer</h3>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Tech Startup Inc.</p>
+          <p style="color: var(--text-light); font-size: 0.875rem; margin-bottom: 1rem;">2022 - Present</p>
+          <p class="card-description">Leading development of core product features, mentoring junior developers, and architecting scalable solutions.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title" style="margin-bottom: 0.5rem;">Full Stack Developer</h3>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Digital Agency Co.</p>
+          <p style="color: var(--text-light); font-size: 0.875rem; margin-bottom: 1rem;">2020 - 2022</p>
+          <p class="card-description">Built custom web applications for diverse clients, from e-commerce platforms to internal business tools.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title" style="margin-bottom: 0.5rem;">Junior Developer</h3>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Web Solutions Ltd.</p>
+          <p style="color: var(--text-light); font-size: 0.875rem; margin-bottom: 1rem;">2019 - 2020</p>
+          <p class="card-description">Started my professional journey building websites and learning modern development practices.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title" style="margin-bottom: 0.5rem;">B.Tech in Computer Science</h3>
+          <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 0.5rem;">Lovely Professional University</p>
+          <p style="color: var(--text-light); font-size: 0.875rem; margin-bottom: 1rem;">2023 - 2027</p>
+          <p class="card-description">Learning with honors, specializing in software engineering and web technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Journey</h2>
+        <p class="section-subtitle">Key milestones that have shaped my career as a developer.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023</span>
+            <h3 class="timeline-title">Started Learning to Code</h3>
+            <p class="timeline-description">Wrote my first lines of code in Python and HTML. Built my first static website and knew this was my calling.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3 class="timeline-title">First Freelance Project</h3>
+            <p class="timeline-description">Landed my first paying client while still in college. Built a portfolio website that sparked my freelancing journey.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3 class="timeline-title">First Hackathon – Second Runner Up</h3>
+            <p class="timeline-description">Participated in my first hackathon and secured the second runner-up position, gaining valuable teamwork and problem-solving experience.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3 class="timeline-title">Open Source Contributor</h3>
+            <p class="timeline-description">Started actively contributing to open-source projects. Had my first PR merged into a popular JavaScript library.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025</span>
+            <h3 class="timeline-title">5th Project Milestone</h3>
+            <p class="timeline-description">Celebrated completing my 5th project as a developer. Built applications for Learning.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025</span>
+            <h3 class="timeline-title">Built My First Full Stack Coding Website</h3>
+            <p class="timeline-description">Created and deployed my first full stack website, integrating both frontend and backend technologies. This milestone marked my transition from learning to building real-world applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Tech Stack</h2>
+        <p class="section-subtitle">The tools and technologies I use to bring ideas to life.</p>
+      </div>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">&#9881;</div>
+          <h4 style="font-size: 0.9rem;">React</h4>
+        </div>
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">&#9881;</div>
+          <h4 style="font-size: 0.9rem;">Next.js</h4>
+        </div>
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">&#9881;</div>
+          <h4 style="font-size: 0.9rem;">Node.js</h4>
+        </div>
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">&#9881;</div>
+          <h4 style="font-size: 0.9rem;">TypeScript</h4>
+        </div>
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">&#9881;</div>
+          <h4 style="font-size: 0.9rem;">Python</h4>
+        </div>
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">&#9881;</div>
+          <h4 style="font-size: 0.9rem;">MongoDB</h4>
+        </div>
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">&#9881;</div>
+          <h4 style="font-size: 0.9rem;">PostgreSQL</h4>
+        </div>
+        <div class="card" style="text-align: center; padding: 1.5rem;">
+          <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">&#9881;</div>
+          <h4 style="font-size: 0.9rem;">Docker</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Let's Build Something Together</h2>
+        <p class="section-subtitle">I'm always excited to work on new projects and collaborate with amazing people. Whether you have a project in mind or just want to connect, I'd love to hear from you.</p>
+        <div class="hero-buttons" style="margin-top: 2rem;">
+          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+          <a href="projects.html" class="btn btn-secondary">See My Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Animesh<span>Tripathi</span></div>
+        <p class="footer-description">Full Stack Developer passionate about creating exceptional digital experiences. Let's build something amazing together.</p>
+        <div class="social-links">
+          <a href="https://github.com/animeshtripathi" class="social-link" title="GitHub">GH</a>
+          <a href="https://linkedin.com/in/animeshtripathi" class="social-link" title="LinkedIn">in</a>
+          <a href="https://twitter.com/animeshtripathi" class="social-link" title="Twitter">X</a>
+          <a href="mailto:animesh@example.com" class="social-link" title="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About Me</a></li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">Frontend Development</a></li>
+          <li><a href="#" class="footer-link">Backend Development</a></li>
+          <li><a href="#" class="footer-link">Mobile Apps</a></li>
+          <li><a href="#" class="footer-link">API Integration</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact Info</h4>
+        <ul class="footer-links">
+          <li><span class="footer-link">New Delhi, India</span></li>
+          <li><span class="footer-link">animesh@example.com</span></li>
+          <li><span class="footer-link">+91 98765 43210</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2026 Animesh Tripathi. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</body>
+</html>
