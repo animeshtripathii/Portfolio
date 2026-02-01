@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Animesh Tripathi - Let's discuss your project">
+  <title>Contact | Animesh Tripathi</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <!-- Page Loader -->
+  <div class="page-loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">Animesh<span>Tripathi</span></a>
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li>
+          <button class="theme-toggle" onclick="toggleTheme()">
+            <span class="theme-icon-light">&#9728;</span>
+            <span class="theme-icon-dark">&#9790;</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="min-height: 50vh;">
+    <div class="hero-content">
+      <span class="hero-badge">Get In Touch</span>
+      <h1 class="hero-title">Let's Build Something <span>Amazing</span></h1>
+      <p class="hero-description">Have a project in mind or just want to say hello? I'd love to hear from you. Drop me a message and I'll get back to you as soon as possible.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-container">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2 class="contact-info-title">Let's Connect</h2>
+          <p class="contact-info-text">I'm currently available for freelance work and full-time opportunities. Whether you have a project idea, a question, or just want to chat about tech, feel free to reach out!</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">&#128205;</div>
+              <div>
+                <strong>Location</strong>
+                <p style="color: var(--text-light); margin-top: 4px;">New Delhi, India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">&#128231;</div>
+              <div>
+                <strong>Email</strong>
+                <p style="color: var(--text-light); margin-top: 4px;">animesh@example.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">&#128222;</div>
+              <div>
+                <strong>Phone</strong>
+                <p style="color: var(--text-light); margin-top: 4px;">+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">&#128339;</div>
+              <div>
+                <strong>Response Time</strong>
+                <p style="color: var(--text-light); margin-top: 4px;">Usually within 24 hours</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h4 style="margin-bottom: 1rem; color: var(--text-color);">Find Me Online</h4>
+            <div class="social-links">
+              <a href="https://github.com/animeshtripathi" class="social-link" title="GitHub">GH</a>
+              <a href="https://linkedin.com/in/animeshtripathi" class="social-link" title="LinkedIn">in</a>
+              <a href="https://twitter.com/animeshtripathi" class="social-link" title="Twitter">X</a>
+              <a href="mailto:animesh@example.com" class="social-link" title="Email">@</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName" class="form-label">First Name *</label>
+              <input 
+                type="text" 
+                id="firstName" 
+                name="firstName" 
+                class="form-input" 
+                placeholder="Enter Your First Name" 
+                required 
+                minlength="2"
+                pattern="[A-Za-z\s]+"
+              >
+              <span class="form-error">Please enter a valid first name (letters only)</span>
+            </div>
+            <div class="form-group">
+              <label for="lastName" class="form-label">Last Name *</label>
+              <input 
+                type="text" 
+                id="lastName" 
+                name="lastName" 
+                class="form-input" 
+                placeholder="Enter Your Last Name" 
+                required 
+                minlength="2"
+                pattern="[A-Za-z\s]+"
+              >
+              <span class="form-error">Please enter a valid last name (letters only)</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form-input" 
+                placeholder="Enter Your Email Address" 
+                required
+              >
+              <span class="form-error">Please enter a valid email address</span>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                class="form-input" 
+                placeholder="Enter Your Phone Number"
+                pattern="[\+]?[0-9\s\-\(\)]+"
+              >
+              <span class="form-error">Please enter a valid phone number</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject *</label>
+            <input 
+              type="text" 
+              id="subject" 
+              name="subject" 
+              class="form-input" 
+              placeholder="Enter Subject of Your Inquiry" 
+              required
+              minlength="5"
+            >
+            <span class="form-error">Subject must be at least 5 characters</span>
+          </div>
+          <div class="form-group">
+            <label for="service" class="form-label">What Can I Help You With?</label>
+            <select id="service" name="service" class="form-input">
+              <option value="">Select a service</option>
+              <option value="frontend">Frontend Development</option>
+              <option value="backend">Backend Development</option>
+              <option value="fullstack">Full Stack Application</option>
+              <option value="mobile">Mobile App Development</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget" class="form-label">Project Budget (Optional)</label>
+            <select id="budget" name="budget" class="form-input">
+              <option value="">Select budget range</option>
+              <option value="under-1k">Under 5000</option>
+              <option value="1k-5k">5000 - 20000</option>
+              <option value="5k-10k">20000 - 50000</option>
+              <option value="10k-25k">50000 - 100000</option>
+              <option value="over-25k">Over 100000</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Your Message *</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              class="form-textarea" 
+              placeholder="Tell me about your project, goals, timeline, and any specific requirements..."
+              required
+              minlength="20"
+            ></textarea>
+            <span class="form-error">Message must be at least 20 characters</span>
+          </div>
+          <div class="form-group">
+            <label style="display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
+              <input type="checkbox" id="consent" name="consent" required style="margin-top: 4px;">
+              <span style="color: var(--text-light); font-size: 0.875rem;">I agree to the processing of my personal data and accept the <a href="#" style="color: var(--primary-color);">Privacy Policy</a> *</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Common questions about working with me and my services.</p>
+      </div>
+      <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+        <div class="card">
+          <h3 class="card-title">What is your typical project timeline?</h3>
+          <p class="card-description">Project timelines vary based on scope and complexity. A basic website takes 2-3 weeks, while full-stack applications may take 4-8 weeks. I'll provide a detailed timeline after our initial discussion.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Do you work with international clients?</h3>
+          <p class="card-description">Absolutely! I've worked with clients across the globe and am comfortable with different time zones. I use tools like Slack, Zoom, and Discord for seamless communication.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">What is your payment structure?</h3>
+          <p class="card-description">For most projects, I work with a 50% upfront payment and 50% upon completion. For larger projects, we can discuss milestone-based payments. I accept bank transfers and PayPal.</p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Do you provide ongoing support?</h3>
+          <p class="card-description">Yes! All projects include a support period for bug fixes (typically 30 days). I also offer maintenance packages for ongoing updates, feature additions, and technical support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Availability Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Current Availability</h2>
+        <p class="section-subtitle">I'm currently available for new projects and opportunities.</p>
+      </div>
+      <div style="background: linear-gradient(135deg, var(--primary-light), var(--secondary-color)); border-radius: var(--radius-xl); padding: 3rem; text-align: center; color: var(--white);">
+        <div style="font-size: 4rem; margin-bottom: 1rem;">&#128197;</div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Open for Projects</h3>
+        <p style="opacity: 0.9; margin-bottom: 1rem;">Available for freelance work starting immediately</p>
+        <p style="opacity: 0.8; font-size: 0.9rem;">Typical response time: Within 24 hours</p>
+        <div style="margin-top: 2rem;">
+          <a href="mailto:animesh@example.com" class="btn" style="background: var(--white); color: var(--primary-color);">Email Me Directly</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Animesh<span>Tripathi</span></div>
+        <p class="footer-description">Full Stack Developer passionate about creating exceptional digital experiences. Let's build something amazing together.</p>
+        <div class="social-links">
+          <a href="https://github.com/animeshtripathi" class="social-link" title="GitHub">GH</a>
+          <a href="https://linkedin.com/in/animeshtripathi" class="social-link" title="LinkedIn">in</a>
+          <a href="https://twitter.com/animeshtripathi" class="social-link" title="Twitter">X</a>
+          <a href="mailto:animesh@example.com" class="social-link" title="Email">@</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">About Me</a></li>
+          <li><a href="projects.html" class="footer-link">Projects</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Services</h4>
+        <ul class="footer-links">
+          <li><a href="#" class="footer-link">Frontend Development</a></li>
+          <li><a href="#" class="footer-link">Backend Development</a></li>
+          <li><a href="#" class="footer-link">Mobile Apps</a></li>
+          <li><a href="#" class="footer-link">API Integration</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-title">Contact Info</h4>
+        <ul class="footer-links">
+          <li><span class="footer-link">New Delhi, India</span></li>
+          <li><span class="footer-link">animesh@example.com</span></li>
+          <li><span class="footer-link">+91 98765 43210</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">&copy; 2026 Animesh Tripathi. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div id="success-modal" class="modal-overlay">
+    <div class="modal">
+      <a href="#" class="modal-close">&times;</a>
+      <div style="text-align: center;">
+        <div style="font-size: 4rem; margin-bottom: 1rem;">&#10004;</div>
+        <h3 class="modal-title">Message Sent!</h3>
+        <p class="modal-content">Thank you for reaching out! I've received your message and will get back to you within 24 hours. In the meantime, feel free to check out my <a href="projects.html" style="color: var(--primary-color);">recent projects</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+
+    // Form submission handler
+    function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      
+      // Check form validity
+      if (form.checkValidity()) {
+        // Show success modal
+        window.location.hash = 'success-modal';
+        // Reset form
+        form.reset();
+      } else {
+        // Trigger browser's native validation
+        form.reportValidity();
+      }
+    }
+  </script>
+</body>
+</html>
