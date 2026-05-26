@@ -47,9 +47,6 @@ function App() {
             >
               tripathianimesh890@gmail.com
             </a>
-            <span className="text-base sm:text-lg font-light tracking-wide text-[#D7E2EA]/80">
-              +91 8299248116
-            </span>
             <div className="flex gap-6 mt-2">
               <a href="https://github.com/animeshtripathii" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity text-xs font-semibold uppercase tracking-widest text-[#D7E2EA]">GitHub</a>
               <a href="https://www.linkedin.com/in/animesh003" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity text-xs font-semibold uppercase tracking-widest text-[#D7E2EA]">LinkedIn</a>
