@@ -2,7 +2,7 @@
 
 A premium, high-performance, and visually stunning developer portfolio landing page. Built with **React 18**, **TypeScript**, **Vite**, **Framer Motion**, and **Tailwind CSS**, this single-page site showcases full-stack capabilities, AI integrations, skills, and interactive projects.
 
-Live Site: [View Portfolio on Vercel](https://code-prep-beryl.vercel.app/) *(or your deployed Vercel URL)*
+Live Site: [View Portfolio on Vercel](https://animeshtripathi.vercel.app/) *(or your deployed Vercel URL)*
 
 ---
 
